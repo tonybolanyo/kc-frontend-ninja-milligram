@@ -10,7 +10,8 @@
 // Sass Modules
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import "../../node_modules/milligram-sass/dist/Color";
+// use custom colors.scss to override defaults
+//@import "../../node_modules/milligram-sass/dist/Color";
 @import "../../node_modules/milligram-sass/dist/Base";
 @import "../../node_modules/milligram-sass/dist/Blockquote";
 @import "../../node_modules/milligram-sass/dist/Button";

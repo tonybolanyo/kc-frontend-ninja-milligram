@@ -59,13 +59,6 @@ table {
  * Copyright (c) 2017 CJ Patoilo
  * Licensed under the MIT license
  */
-/*!
- * Milligram-sass v1.3.0
- * https://milligram.github.io
- *
- * Copyright (c) 2017 CJ Patoilo
- * Licensed under the MIT license
- */
 *,
 *:after,
 *:before {
@@ -110,8 +103,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #9b4dca;
-  border: 0.1rem solid #9b4dca;
+  background-color: red;
+  border: 0.1rem solid red;
   border-radius: .4rem;
   color: #fff;
   cursor: pointer;
@@ -155,15 +148,15 @@ input[type='submit'] {
     input[type='reset'][disabled]:hover,
     input[type='submit'][disabled]:focus,
     input[type='submit'][disabled]:hover {
-      background-color: #9b4dca;
-      border-color: #9b4dca; }
+      background-color: red;
+      border-color: red; }
   .button.button-outline,
   button.button-outline,
   input[type='button'].button-outline,
   input[type='reset'].button-outline,
   input[type='submit'].button-outline {
     background-color: transparent;
-    color: #9b4dca; }
+    color: red; }
     .button.button-outline:focus, .button.button-outline:hover,
     button.button-outline:focus,
     button.button-outline:hover,
@@ -186,7 +179,7 @@ input[type='submit'] {
     input[type='submit'].button-outline[disabled]:focus,
     input[type='submit'].button-outline[disabled]:hover {
       border-color: inherit;
-      color: #9b4dca; }
+      color: red; }
   .button.button-clear,
   button.button-clear,
   input[type='button'].button-clear,
@@ -194,7 +187,7 @@ input[type='submit'] {
   input[type='submit'].button-clear {
     background-color: transparent;
     border-color: transparent;
-    color: #9b4dca; }
+    color: red; }
     .button.button-clear:focus, .button.button-clear:hover,
     button.button-clear:focus,
     button.button-clear:hover,
@@ -216,7 +209,7 @@ input[type='submit'] {
     input[type='reset'].button-clear[disabled]:hover,
     input[type='submit'].button-clear[disabled]:focus,
     input[type='submit'].button-clear[disabled]:hover {
-      color: #9b4dca; }
+      color: red; }
 
 /*!
  * Milligram-sass v1.3.0
@@ -235,7 +228,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
+  border-left: 0.3rem solid red;
   overflow-y: hidden; }
   pre > code {
     border-radius: 0;
@@ -289,7 +282,7 @@ select {
   input[type='url']:focus,
   textarea:focus,
   select:focus {
-    border-color: #9b4dca;
+    border-color: red;
     outline: 0; }
 
 select {
@@ -437,7 +430,7 @@ input[type='radio'] {
  * Licensed under the MIT license
  */
 a {
-  color: #9b4dca;
+  color: red;
   text-decoration: none; }
   a:focus, a:hover {
     color: #606c76; }
@@ -606,3 +599,7 @@ img {
 
 .float-right {
   float: right; }
+
+.navbar {
+  background: #e1e1e1;
+  color: #606c76; }
