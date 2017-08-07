@@ -1,4 +1,53 @@
 .navbar {
-    background: $color-quinary;
-    color: $color-secondary;
+    background: $color-tertiary;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: fadeDownward .7s ease-in-out forwards;
+    transition: background-color 1s ease;
+    height: 50px;
+    @extend .clearfix;
+    .navbar-list {
+        position: relative;
+        float: right;
+        .navbar-item {
+            display: inline;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                padding: 10px;
+                transition: color .3s ease;
+                line-height: 30px;
+                &:hover {
+                    color: #f7f7f7;
+                    background-color: $color-primary;
+                }
+            }
+            &.active a {
+                background: $color-primary;
+                color: #F7F7F7;
+            }
+        }
+    }
+}
+
+.menu-logo {
+    float: left;
+    margin-left: 8px;
+    line-height: 50px;
+    a {
+        font-size: 30px;
+        color: $color-primary;
+        text-decoration: none;
+        line-height: 50px;
+        span {
+            color: $color-warning;
+        }
+    }
+}
+
+.menu-search-form {
+    display: inline-block;
+    margin: 0 1rem;
 }

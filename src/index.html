@@ -10,21 +10,26 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="menu-logo">re/connect</div>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">categories</a></li>
-                <li><a href="#">login</a></li>
-                <li><a href="#">register</a></li>
+            <div class="menu-logo">
+                <a href="#"><span>re/</span>connect</a>
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="#">categories</a></li>
+                <li class="navbar-item"><a href="#">login</a></li>
+                <li class="navbar-item"><a href="#">register</a></li>
+                <li class="navbar-item">
+                    <form class="menu-search-form">
+                        <input type="search" name="search" placeholder="search...">
+                    </form> 
+                </li>
             </ul>
-            <form>
-                <input type="search" name="search">
-            </form> 
         </nav>
     </header>
     <main class="container">
 
-        <h1>re/connect, a new social network</h1>
+        <div class="row">
+            <h1>re/connect, a new social network</h1>
+        </div>
         
         <section id="articles-list">
 
