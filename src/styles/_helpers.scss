@@ -1,9 +1,16 @@
 // media queries for breakpoints
-// Larger than mobile screen
-@media (min-width: 40.0rem) {}
+// it's a mobile first design, so small screen is the default
+@mixin if-medium-screen {
+    // Larger than mobile screen
+    @media (min-width: 40.0rem) { @content; }
+}
 
-// Larger than tablet screen
-@media (min-width: 80.0rem) {}
+@mixin if-large-screen {
+    // Larger than tablet screen
+    @media (min-width: 80.0rem) { @content; }
+}
 
-// Larger than desktop screen
-@media (min-width: 120.0rem) {}
+@mixin if-extra-large-screen {
+    // Larger than desktop screen
+    @media (min-width: 120.0rem) { @content; }
+}

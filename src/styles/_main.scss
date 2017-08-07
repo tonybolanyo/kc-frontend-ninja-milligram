@@ -1,3 +1,6 @@
 body {
-    margin-top: 50px;
+    margin-top: 150px;
+    @include if-medium-screen {
+        margin-top: 50px;
+    }
 }
