@@ -1,0 +1,19 @@
+button, .button {
+    transition: background-color .2s ease;
+    transition: border-color .2s ease;
+}
+.button-dark {
+    background-color: $color-dark;
+    border-color: $color-dark;
+    &.button-outline, &.button-clear {
+        color: $color-dark;
+    }
+}
+
+.button-warning {
+    background-color: $color-warning;
+    border-color: $color-warning;
+    &.button-outline, &.button-clear {
+        color: $color-warning;
+    }
+}

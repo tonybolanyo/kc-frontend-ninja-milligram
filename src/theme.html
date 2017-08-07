@@ -6,9 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Theme checker</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        [class*="bg-*"] {
+            min-height: 50px;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
+
+        <h1>Colors</h1>
+
+        <div class="row">
+            <div class="bg-primary column">Primary color</div>
+            <div class="bg-secondary column">secondary color</div>
+            <div class="bg-tertiary column">tertiary color</div>
+            <div class="bg-quaternary column">quaternary color</div>
+            <div class="bg-quinary column">quinary color</div>
+            <div class="bg-dark column">dark color</div>
+            <div class="bg-warning column">warning color</div>
+        </div>
 
         <h1>Header styles</h1>
 
@@ -112,14 +130,32 @@
         </code></pre>
 
         <h1>Buttons</h1>
-        <!-- Default Button -->
-        <a class="button" href="#">Default Button</a>
+        <p>
+            <!-- Default Button -->
+            <a class="button" href="#">Default Button</a>
+            <!-- Outlined Button -->
+            <button class="button button-outline">Outlined Button</button>
+            <!-- Clear Button -->
+            <input class="button button-clear" type="submit" value="Clear Button">
+        </p>
 
-        <!-- Outlined Button -->
-        <button class="button button-outline">Outlined Button</button>
+        <p>
+            <!-- Default Button -->
+            <a class="button button-dark" href="#">Alert Button</a>
+            <!-- Outlined Button -->
+            <button class="button button-outline button-dark">Outlined Button</button>
+            <!-- Clear Button -->
+            <input class="button button-clear button-dark" type="submit" value="Clear Button">
+        </p>
 
-        <!-- Clear Button -->
-        <input class="button button-clear" type="submit" value="Clear Button">
+        <p>
+            <!-- Default Button -->
+            <a class="button button-warning" href="#">Warning Button</a>
+            <!-- Outlined Button -->
+            <button class="button button-outline button-warning">Outlined Button</button>
+            <!-- Clear Button -->
+            <input class="button button-clear button-warning" type="submit" value="Clear Button">
+        </p>
 
         <h1>Forms</h1>
         <form>

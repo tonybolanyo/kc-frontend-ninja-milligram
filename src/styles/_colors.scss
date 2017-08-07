@@ -1,7 +1,39 @@
 // custom colors for milligram reused for full website
 $color-initial: #fff !default;
-$color-primary: #9b4dca !default;
+$color-primary: #029994 !default;
 $color-secondary: #606c76 !default;
 $color-tertiary: #f4f5f6 !default;
 $color-quaternary: #d1d1d1 !default;
 $color-quinary: #e1e1e1 !default;
+
+// extra colors
+$color-dark: #4C1005 !default;
+$color-warning: #ED8A22 !default;
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-secondary {
+    background-color: $color-secondary;
+}
+
+.bg-tertiary {
+    background-color: $color-tertiary;
+}
+
+.bg-quaternary {
+    background-color: $color-quaternary;
+}
+
+.bg-quinary {
+    background-color: $color-quinary;
+}
+
+.bg-dark {
+    background-color: $color-dark;
+}
+
+.bg-warning {
+    background-color: $color-warning;
+}

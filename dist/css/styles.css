@@ -45,6 +45,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.bg-primary {
+  background-color: #029994; }
+
+.bg-secondary {
+  background-color: #606c76; }
+
+.bg-tertiary {
+  background-color: #f4f5f6; }
+
+.bg-quaternary {
+  background-color: #d1d1d1; }
+
+.bg-quinary {
+  background-color: #e1e1e1; }
+
+.bg-dark {
+  background-color: #4C1005; }
+
+.bg-warning {
+  background-color: #ED8A22; }
+
 /*!
  * Milligram-sass v1.3.0
  * https://milligram.github.io
@@ -103,8 +124,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: red;
-  border: 0.1rem solid red;
+  background-color: #029994;
+  border: 0.1rem solid #029994;
   border-radius: .4rem;
   color: #fff;
   cursor: pointer;
@@ -148,15 +169,15 @@ input[type='submit'] {
     input[type='reset'][disabled]:hover,
     input[type='submit'][disabled]:focus,
     input[type='submit'][disabled]:hover {
-      background-color: red;
-      border-color: red; }
+      background-color: #029994;
+      border-color: #029994; }
   .button.button-outline,
   button.button-outline,
   input[type='button'].button-outline,
   input[type='reset'].button-outline,
   input[type='submit'].button-outline {
     background-color: transparent;
-    color: red; }
+    color: #029994; }
     .button.button-outline:focus, .button.button-outline:hover,
     button.button-outline:focus,
     button.button-outline:hover,
@@ -179,7 +200,7 @@ input[type='submit'] {
     input[type='submit'].button-outline[disabled]:focus,
     input[type='submit'].button-outline[disabled]:hover {
       border-color: inherit;
-      color: red; }
+      color: #029994; }
   .button.button-clear,
   button.button-clear,
   input[type='button'].button-clear,
@@ -187,7 +208,7 @@ input[type='submit'] {
   input[type='submit'].button-clear {
     background-color: transparent;
     border-color: transparent;
-    color: red; }
+    color: #029994; }
     .button.button-clear:focus, .button.button-clear:hover,
     button.button-clear:focus,
     button.button-clear:hover,
@@ -209,7 +230,7 @@ input[type='submit'] {
     input[type='reset'].button-clear[disabled]:hover,
     input[type='submit'].button-clear[disabled]:focus,
     input[type='submit'].button-clear[disabled]:hover {
-      color: red; }
+      color: #029994; }
 
 /*!
  * Milligram-sass v1.3.0
@@ -228,7 +249,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid red;
+  border-left: 0.3rem solid #029994;
   overflow-y: hidden; }
   pre > code {
     border-radius: 0;
@@ -282,7 +303,7 @@ select {
   input[type='url']:focus,
   textarea:focus,
   select:focus {
-    border-color: red;
+    border-color: #029994;
     outline: 0; }
 
 select {
@@ -430,7 +451,7 @@ input[type='radio'] {
  * Licensed under the MIT license
  */
 a {
-  color: red;
+  color: #029994;
   text-decoration: none; }
   a:focus, a:hover {
     color: #606c76; }
@@ -603,3 +624,19 @@ img {
 .navbar {
   background: #e1e1e1;
   color: #606c76; }
+
+button, .button {
+  transition: background-color .2s ease;
+  transition: border-color .2s ease; }
+
+.button-dark {
+  background-color: #4C1005;
+  border-color: #4C1005; }
+  .button-dark.button-outline, .button-dark.button-clear {
+    color: #4C1005; }
+
+.button-warning {
+  background-color: #ED8A22;
+  border-color: #ED8A22; }
+  .button-warning.button-outline, .button-warning.button-clear {
+    color: #ED8A22; }
